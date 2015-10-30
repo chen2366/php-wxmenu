@@ -1,7 +1,7 @@
 <?php
-//Ó­¹óÔËÎ¢ÐÅ¹«ÖÚÆ½Ì¨²Ëµ¥
-$appid = "wxa251e8ab191d3bbb";
-$appsecret = "9850d230e0677725726b9ae3734df532";
+//ç™»æ ¼å¸å¾®ä¿¡å…¬ä¼—å¹³å°èœå•
+$appid = "wx595da41455e1b3d7";
+$appsecret = "b07b81371fd562be49b810b5eb37a4db";
 $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=$appid&secret=$appsecret";
 
 $output = https_request($url);
@@ -11,95 +11,10 @@ $access_token = $jsoninfo["access_token"];
 $jsonmenu = '{
       "button":[
       {
-            "name":"Î¢ÉÌ³Ç",
-           	"sub_button":[
-            {
-            		"type":"view",
-                "name":"¹ä¹äÉÌ³Ç",
-                "url":"http://ygy.yz360.net/wechat/oauth/wxch_oauth.php?oid=17"
-            },
-            {
-               "type":"click",
-               "name":"ÕÐÉÌ¼ÓÃË",
-               "key":"ÕÐÉÌ¼ÓÃË"
-            },
-            {
-               "type":"view",
-               "name":"ÂæÍÕ³é½±",
-               "url":"http://ygy.yz360.net/mobile/article.php?id=49"
-            },
-            {
-               "type":"view",
-               "name":"»áÔ±ÖÐÐÄ",
-               "url":"http://ygy.yz360.net/mobile/user.php"
-            },
-            {
-                "name": "¸½½üµêÆÌ", 
-		            "type": "location_select", 
-		            "key": "rselfmenu_2_0"
-            }]
-      
-
-       },
-       {
-       		"name":"Æ·ÅÆÍÆ¼ö",
-       		 "sub_button":[{
-       		 		"type":"click",
-              "name":"°×¾Æ×¨Çø",
-              "key":"°×¾Æ×¨Çø"
-       		 },
-       		 {
-       		 		"type":"click",
-              "name":"ºì¾Æ×¨Çø",
-              "key":"ºì¾Æ×¨Çø"
-       		 },
-       		 {
-       		 		"type":"click",
-              "name":"ÒûÁÏ×¨Çø",
-              "key":"ÒûÁÏ×¨Çø"
-       		 },
-       		 {
-       		 		"type":"click",
-              "name":"Æ·ÅÆÉÏÐÂ",
-              "key":"new"
-       		 },
-       		 {
-       		 		"type":"click",
-              "name":"´ÙÏúÓÐÀñ",
-              "key":"´ÙÏúÓÐÀñ"
-       		 }]
-       },
-       {
-            "name":"¹ØÓÚÎÒÃÇ",
-           "sub_button":[
-            {
-          		"name": "¹«Ë¾¹ÙÍø", 
-	            "type": "view", 
-	            "url": "http://ygy.yz360.net/mobile/article.php?id=52"
-            },
-            {
-               "type":"view",
-               "name":"¹«Ë¾¿Í·þ",
-               "url":"http://ygy.yz360.net/mobile/article.php?id=51"
-            },
-            {
-               "type":"view",
-               "name":"¹«Ë¾ÎÄ»¯",
-               "url":"http://ygy.yz360.net/mobile/article.php?id=50"
-            },
-            {
-               "type":"click",
-               "name":"¹«Ë¾×ÊÑ¶",
-               "key":"¹«Ë¾×ÊÑ¶"
-            },
-            {
-                "type":"click",
-                "name":"×¢²áÓÐÀñ",
-                "key":"×¢²áÓÐÀñ"
-            }]
-      
-
-       }]
+        "type":"view",
+        "name":"å¾®å•†åŸŽ",
+        "url":"http://dgd.hanjiajobs.com/mobile/"
+      }]
  }';
 
 $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
