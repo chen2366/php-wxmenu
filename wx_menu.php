@@ -1,7 +1,7 @@
 <?php
 //登格帝微信公众平台菜单
-$appid        = "wx595da41455e1b3d7";//微信公众平台 appid
-$appsecret    = "b07b81371fd562be49b810b5eb37a4db";//微信公众平台 appid
+$appid        = "***********";//微信公众平台 appid
+$appsecret    = "**********************";//微信公众平台 appid
 $url          = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=$appid&secret=$appsecret";
 
 $output       = https_request($url);
