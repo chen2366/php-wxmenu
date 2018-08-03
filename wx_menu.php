@@ -1,5 +1,4 @@
 <?php
-//登格帝微信公众平台菜单
 $appid        = "***********";//微信公众平台 appid
 $appsecret    = "**********************";//微信公众平台 appid
 $url          = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=$appid&secret=$appsecret";
@@ -12,8 +11,8 @@ $jsonmenu 	  = '{
 				      "button":[
 				      {
 				        "type":"view",
-				        "name":"微商城",
-				        "url":"http://dgd.hanjiajobs.com/mobile/"
+				        "name":"菜单",
+				        "url":"http://xxxx.com/"
 				      }]
 				 }';
 
